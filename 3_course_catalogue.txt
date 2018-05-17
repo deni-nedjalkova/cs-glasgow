@@ -1,0 +1,5 @@
+CS1P,20,Monday,14,Monday,15,Wednesday,12,Friday,12
+CS1Q,20,Tuesday,12,Wednesday,15,Wednesday,16,Thursday,12
+Maths,40,Monday,11,Tuesday,11,Wednesday,11,Thursday,11,Friday,11
+Stats,60,Tuesday,12,Wednesday,9
+EarthScience,40,Monday,10,Wednesday,10
