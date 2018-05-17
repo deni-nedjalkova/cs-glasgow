@@ -20,7 +20,7 @@ import random
 
 def read_books():
 	book_list = []
-	with open ('books.txt', 'r') as file_books:
+	with open ('1_books.txt', 'r') as file_books:
 		line = file_books.readline()[:-1] # omit the newline character
 		while line != "":
 			line = line.split(',') # ['author', 'title']
@@ -33,7 +33,7 @@ ALL_BOOKS = 55 # number of books
 
 def read_users():
 	users_dict = {} # dictionary: ratings assigned to a person
-	with open ('ratings.txt', 'r') as file_users:
+	with open ('1_ratings.txt', 'r') as file_users:
 		line_1 = file_users.readline()[:-1]
 		line_2 = file_users.readline()[:-2].split(" ") # split at spaces
 		while line_1 != "":
@@ -90,7 +90,7 @@ def get_new_rating_list():
 	return new_record
 
 def print_recommendations(recommended_dict):
-	with open ('output.txt', 'w') as output_file:
+	with open ('1_output.txt', 'w') as output_file:
 		for recommender in recommended_dict:
 			line_1 = "Recommended by user {0}:\n".format(recommender)
 			output_file.write(line_1)
